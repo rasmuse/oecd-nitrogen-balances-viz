@@ -4,3 +4,9 @@
 - Country groups from FAOSTAT
 - OECD countries as well as a number of non-OECD countries are included
 - The lines show unweighted group means of N balance per hectare. Shaded bands show means plus/minus 1 standard deviation.
+
+# Licensing
+
+- Copyright 2021 Rasmus Einarsson
+- Source code: see LICENSE file
+- Figures: Open access licensed under Creative Commons Attribution ShareAlike 4.0 license. See https://creativecommons.org/licenses/by-sa/4.0/
