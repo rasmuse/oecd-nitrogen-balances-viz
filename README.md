@@ -1,4 +1,4 @@
-# Gross nitrogen balances from OECDstat
+# Visualization of gross nitrogen balances from OECDstat
 
 - Data collected from OECDstat 2021-09-02: https://stats.oecd.org/
 - Country groups from FAOSTAT
