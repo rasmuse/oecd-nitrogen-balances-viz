@@ -60,12 +60,6 @@ for group, color in zip(group_order, colors):
     d = oecd_balances.xs(group).unstack("COUNTRY")
     band_width = 2 * d.std(axis=1)
     mean = d.mean(axis=1)
-    ax.fill_between(
-        d.index,
-        mean + band_width / 2,
-        mean - band_width / 2,
-        color=(*color, 0.1),
-    )
     ax.plot(
         d.mean(axis=1),
         lw=3,
@@ -73,7 +67,7 @@ for group, color in zip(group_order, colors):
         label=f"{group} (n={len(d.columns)})",
     )
 ax.grid(True)
-ax.set_title("Gross N balances (group means ± 1 stdev)")
+ax.set_title("Gross N balances (group means)")
 ax.set_ylabel("kg N/ha agricultural area")
 ax.set_xlabel("Year")
 ax.legend(bbox_to_anchor=(0, -0.2), loc="upper left", frameon=False)
