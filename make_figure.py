@@ -67,8 +67,7 @@ for group, color in zip(group_order, colors):
         label=f"{group} (n={len(d.columns)})",
     )
 ax.grid(True)
-ax.set_title("Gross N balances (group means)")
-ax.set_ylabel("kg N/ha agricultural area")
+ax.set_ylabel("kg N ha$^{-1}$ yr$^{-1}$")
 ax.set_xlabel("Year")
 ax.legend(bbox_to_anchor=(0, -0.2), loc="upper left", frameon=False)
 ax.set_ylim(-20, 150)
